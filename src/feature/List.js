@@ -3,6 +3,7 @@ import axios from "axios";
 
 function List() {
     const [data, setData] = useState([]);
+
     useEffect(() => {
         const getData = async () => {
             const response = await axios.get("https://jherr-pokemon.s3.us-west-1.amazonaws.com/index.json");
@@ -13,6 +14,7 @@ function List() {
         }
         getData();
     }, [])
+
     return (
         <div className="list">
             <div className="container">
