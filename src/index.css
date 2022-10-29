@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.list>.container {
+  max-width: 1200px;
+  margin: auto;
+  background-color: yellow;
+}
+
+.list>.container>.listPokemon {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.list>.container>.listPokemon>.box {
+  max-width: 280px;
+  max-height: 200px;
+  background-color: #fff;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.list>.container>.listPokemon>.box>img {
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 100%;
+}
+@media (max-width:640px) {
+  .list>.container>.listPokemon{
+    flex-direction: column;
+  }
+}
