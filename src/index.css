@@ -15,7 +15,6 @@ code {
 .list>.container {
   max-width: 1200px;
   margin: auto;
-  background-color: yellow;
 }
 
 .list>.container>.listPokemon {
@@ -30,6 +29,7 @@ code {
   max-width: 280px;
   max-height: 200px;
   background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   column-gap: 20px;
   row-gap: 20px;
 }
